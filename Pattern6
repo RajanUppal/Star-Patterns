@@ -1,0 +1,37 @@
+/*
+C++ Program to print the following star pattern.
+Input : 5
+Output :
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter number of rows : ";
+	cin>>n;
+	int i = 1;
+	while (i<=n)
+	{
+		int spaces=i; 
+		while(spaces <= n)
+		{
+			cout<<" ";
+			spaces++;
+		}
+		int j=1; 
+		while(j <= i)
+		{
+			cout<<"* ";
+			j++;
+		}
+		cout<<endl;
+		i++;
+	}
+}
